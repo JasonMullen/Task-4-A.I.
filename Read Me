@@ -1,0 +1,41 @@
+Variational Autoencoder (VAE) Experiments
+This project contains a series of experiments to analyze the performance of Variational Autoencoders (VAEs) with different architectures and hyperparameters, using the MNIST dataset of handwritten digit images.
+
+Table of Contents
+Requirements
+Project Structure
+Usage
+Experiments
+Summary of Findings
+License
+Requirements
+Python 3.6 or higher
+PyTorch 1.8.0 or higher
+torchvision
+NumPy
+Matplotlib
+scikit-learn
+Project Structure
+main.py: The main script containing the code for data preparation, VAE model definition, training, and comparison.
+samples: A directory for storing generated and reconstructed images from the models.
+data: A directory for storing the MNIST dataset.
+README.md: This readme file with an overview of the project and usage instructions.
+Usage
+Ensure you have all the required packages installed.
+Run the main.py script to perform the experiments and generate the results.
+bash
+Copy code
+python main.py
+Check the samples directory for generated and reconstructed images from the models.
+Experiments
+The project includes the following experiments:
+
+Comparison of 3-layer and 4-layer VAE models based on optimal loss and visual inspection of generated and reconstructed images.
+Comparison of 3-layer VAE models with different hidden and latent layer dimensions.
+Comparison of a 3-layer VAE model with a 3-layer autoencoder model based on optimal loss and visual inspection of generated and reconstructed images.
+Summary of Findings
+The 4-layer VAE model performs slightly better than the 3-layer model in terms of optimal loss.
+For 3-layer VAE models with different hidden and latent layer dimensions, models with larger hidden layers and more compact latent spaces perform better.
+When comparing the VAE and autoencoder models, the autoencoder has a lower optimal loss but produces less realistic generated images.
+License
+This project is released under the MIT License.
